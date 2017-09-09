@@ -1,0 +1,78 @@
+<view class="mainBox">
+    <view class="header">
+        <!--头像figure-->
+        <view class="figure">
+            <view class="imgContainer">
+                <image class="userLogo" src="{{userInfo.logo}}"></image>
+            </view>
+            <span class="userName">{{userInfo.name}}</span><span class="userRole">{{userInfo.role || '暂无'}}</span>
+            <view style="position: absolute;width: 70px;right: 0px;top: 15px;">
+                <view class="statusBox" style="transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88) {{durationLfs[0]}};transform:translateX({{initLf}});">
+                    <image class="oaStatus" src="../../../images/wait.png"></image><span class="oaStatusLabel">{{myOA.waiting}}</span></view>
+                <view class="statusBox" style="background: #7ca7d5;transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88) {{durationLfs[1]}};transform:translateX({{initLf}});">
+                    <image class="oaStatus" src="../../../images/processing.png"></image><span class="oaStatusLabel">{{myOA.processing}}</span></view>
+                <view class="statusBox" style="background: #baf39e;transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88) {{durationLfs[2]}};transform:translateX({{initLf}});">
+                    <image class="oaStatus" src="../../../images/finish.png"></image><span class="oaStatusLabel">{{myOA.finished}}</span></view>
+            </view>
+            <view class="figureContent">
+                <span style="display: block;margin-top: 28px;">{{userInfo.pStation}}/</span>
+
+
+            </view>
+        </view>
+        <view>
+            <view style="height: 49px;position: relative;">
+                <view class="searchBg"></view>
+                <image src="../../../images/addCompany.png" class="addCompany"></image>
+                <image src="../../../images/menu.png" class="menu" bindtap="showCompanyProcessing"></image>
+                <view class="search">
+                    <image src="../../../images/search.png" style="width: 15px;height: 15px;padding-left: 5px;position: absolute;top: 30%;"></image>
+                    <input type="text" placeholder="请输入单位名称" bindtap="search" style="font-size: 15px;color: #7ca7d5;margin-left: 24px;position: relative;top: 2px;font-weight: bold;" />
+                </view>
+            </view>
+            <view class="list" style="{{!showCList?'display:none;':''}}">
+                <li wx:for="{{campanys}}" wx:key="{{citem.id}}" wx:for-item="citem" style="transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88) {{durationLfs[0]}};transform:scale({{citem.initScale}});opacity:{{citem.initScale}}">
+                    <view class="fIcon" style="background:{{citem._color}}">{{citem.fontIcon}}</view>
+                    <view class="lfCompanyItem">
+                        <span class="rgCompanyName">{{citem.name}}</span>
+                        <image src="../../../images/tel.png" style="width: 14px;height: 13px;line-height: 11px;vertical-align: middle;margin-left: 10px;top: -1px;position: relative;: 1px solid red;float:right;"></image>
+                        <span style="float:right;font-size: 14px;">{{citem.artificialP}}</span>
+                        <span class="{{citem.isImp == true?'isImp':''}}"></span>
+                        <span class="companyTag" wx:for="{{citem.tags}}" wx:for-item="tagItem">{{tagItem.name}}</span>
+                        <image src="../../../images/del.png" class="delCompany" bindtap="delCompany" data-citem="{{citem}}"></image>
+                    </view>
+                </li>
+            </view>
+            <view class="list" style="{{showCList?'display:none;':''}}">
+                <li wx:for="{{companyProcessings}}" wx:key="{{litem.id}}" wx:for-item="litem" style="transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88) {{durationLfs[0]}};transform:scale({{initScale}});opacity:{{initScale}}">
+                    <view class="fIcon" style="background:{{litem._color}}">{{litem.fontIcon}}</view>
+                    <view class="lfCompanyItem">
+                        <span class="rgCompanyName">{{litem.name}}</span>
+                        <image src="../../../images/tel.png" style="width: 14px;height: 13px;line-height: 11px;vertical-align: middle;margin-left: 10px;top: -1px;position: relative;: 1px solid red;float:right;"></image>
+                        <span style="float:right;font-size: 14px;">{{litem.artificialP}}</span>
+                        <span class="{{litem.isImp == true?'isImp':''}}"></span>
+                        <view style="{{litem.status =='waiting'?'display:block;':'display:none;'}}">
+                            <span class=" processBtn">通过</span>
+                            <span class=" processBtn failBtn">驳回</span>
+                        </view>
+                        <view style="{{litem.status !=='waiting'?'display:block;':'display:none;'}}">
+                            <image src="../../../images/time.png" class="timeImg"></image>
+                            <span>2017-08-27 09:12:12</span>
+                            <span>{{litem.status == 'fail'?'驳回':'通过'}}</span>
+                        </view>
+                    </view>
+                </li>
+            </view>
+        </view>
+
+
+
+    </view>
+    <view class="body">
+        <!--栏目-->
+        <view class="nav">
+
+
+        </view>
+    </view>
+</view>

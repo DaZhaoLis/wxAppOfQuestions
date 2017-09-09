@@ -1,0 +1,288 @@
+.userLogo {
+    width: 87px;
+    height: 84px;
+    position: relative;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+}
+
+.leftHolder,
+.righHolder {
+    width: 37px;
+    height: 4px;
+    position: absolute;
+    background: #ffffff;
+    z-index: 999;
+}
+
+.leftHolder {
+    top: -2px;
+    right: -3px;
+}
+
+.righHolder {
+    bottom: -1px;
+    left: 0px;
+    width: 39px;
+    height: 4px;
+}
+
+.imgContainer {
+    width: 98px;
+    float: left;
+}
+
+.figure {
+    padding: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    position: relative;
+    border-bottom: 3px solid #7ca7d5;
+}
+
+.figureContent {
+    float: left;
+    margin-left: 5px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    width: calc(100% - 185px);
+}
+
+.userName {
+    min-width: 18px;
+    margin-left: 8px;
+    font-size: 22px;
+}
+
+.mainBox {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(252, 250, 250, 0.77);
+    overflow-x: hidden;
+}
+
+.userRole {
+    position: relative;
+    background: #08d9da;
+    font-size: 12px;
+    color: #ffffff;
+    left: 7px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.card {
+    padding: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    height: 105px;
+    margin: 8px;
+    border-bottom: 3px solid #f28ba0;
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88);
+}
+
+.card image {
+    width: 87px;
+    height: 101px;
+    float: left;
+    margin-top: 0px;
+}
+
+.card span {
+    float: left;
+    display: block;
+    width: 67%;
+    margin-top: 10px;
+    margin-left: 13px;
+    color: #A9A9A9;
+}
+
+.btn {
+    border-radius: 50%;
+    width: 30px!important;
+    height: 31px!important;
+    background: #7ca7d5;
+    position: absolute;
+    bottom: 2px;
+    right: 3px;
+    padding: 7px;
+    box-shadow: 3px 2px 4px #c0c0c0;
+    transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88);
+}
+
+.oaStatus {
+    width: 16px;
+    height: 16px;
+    float: left;
+    padding-right: 21px;
+}
+
+.oaStatusLabel {
+    font-size: 15px;
+    line-height: 15px;
+    vertical-align: top;
+    font-weight: bold;
+    float: left;
+    color: #ffffff;
+}
+
+.statusBox {
+    border-radius: 9px;
+    background: #e89abe;
+    display: inline-block;
+    width: 102%;
+    margin-bottom: 4px;
+    padding: 2px;
+    transform: translateX(65%);
+}
+
+.searchBg {
+    background: #7ca7d5;
+    height: 101px;
+    width: 100vw;
+    position: absolute;
+}
+
+.search {
+    border-radius: 10px;
+    width: 70%;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 13px;
+    padding: 3px;
+    background: rgba(252, 250, 250, 0.77);
+    line-height: 30px;
+}
+
+.list li {
+    display: inline-block;
+    width: 89vw;
+    min-height: 59px;
+    padding: 9px;
+    border-radius: 8px;
+    background: #ffffff;
+    margin-bottom: 16px;
+    box-shadow: 0px 1px 3px #d3d3d3;
+    opacity: 0.3;
+    transform: scale(0.9);
+    overflow: hidden;
+}
+
+.timeImg {
+    width: 21px;
+    height: 21px;
+    position: relative;
+    right: 0px;
+    bottom: -4px;
+    margin-right: 11px;
+}
+
+.processBtn {
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #707070;
+    margin: 9px 25px 7px 0px;
+    display: inline-block;
+    border: 2px solid #08d9da;
+    width: 48px;
+    text-align: center;
+}
+
+.failBtn {
+    border: 2px solid #e89abe;
+}
+
+.isImp {
+    display: inline-block;
+    position: absolute;
+    top: 23%;
+    right: -13%;
+    font-size: 22rpx;
+    border-radius: 50%;
+    width: 27px;
+    height: 29px;
+    background: #e89abe;
+    color: #ffffff;
+    text-align: center;
+    line-height: 24px;
+    padding-left: 6px;
+}
+
+.list {
+    padding: 15px;
+}
+
+.addCompany {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -27px;
+    left: 0px;
+    border-radius: 50%;
+    background: #82addb;
+    padding: 9px;
+}
+
+.menu {
+    width: 32px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    right: 9px;
+}
+
+.delCompany {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: 0px;
+    bottom: 9px;
+}
+
+.fIcon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    background: #08d9da;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px;
+}
+
+.lfCompanyItem {
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 12px;
+    position: relative;
+    top: 1px;
+    vertical-align: middle;
+    width: 83%;
+}
+
+.rgCompanyName {
+    color: #707070;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: inline-block;
+    width: 77%;
+}
+
+.companyTag {
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 5px;
+    background: #a4cadf;
+    color: #ffffff;
+    margin: 9px 7px 7px 0px;
+    display: inline-block;
+}

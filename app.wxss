@@ -1,0 +1,19 @@
+/**app.wxss**/
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+}
+
+page {
+    background: rgba(252, 250, 250, 0.77)
+}
+
+view {
+    color: #707070;
+}

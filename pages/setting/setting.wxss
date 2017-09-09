@@ -1,0 +1,177 @@
+.userLogo {
+    width: 87px;
+    height: 84px;
+    position: relative;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+}
+
+.leftHolder,
+.righHolder {
+    width: 37px;
+    height: 4px;
+    position: absolute;
+    background: #ffffff;
+    z-index: 999;
+}
+
+.leftHolder {
+    top: -2px;
+    right: -3px;
+}
+
+.righHolder {
+    bottom: -1px;
+    left: 0px;
+    width: 39px;
+    height: 4px;
+}
+
+.imgContainer {
+    display: inline-block;
+    float: left;
+    width: 98px;
+}
+
+.figure {
+    padding: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.figureContent {
+    float: left;
+    margin-left: 5px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    width: 55%;
+}
+
+.userName {
+    min-width: 18px;
+    margin-left: 8px;
+    font-size: 22px;
+}
+
+.figureContent span {
+    display: block;
+    line-height: 30px;
+}
+
+.mainBox {
+    width: 100vw;
+    height: 100vh;
+    background: #f3f3f3;
+}
+
+.userRole {
+    position: absolute;
+    background: #08d9da;
+    font-size: 12px;
+    padding: 2px;
+    color: #ffffff;
+    right: 0px;
+    padding-left: 9px;
+}
+
+.card {
+    padding: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    height: 105px;
+    margin: 8px;
+    border-bottom: 3px solid #f28ba0;
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88);
+}
+
+.card image {
+    width: 87px;
+    height: 101px;
+    float: left;
+    margin-top: 0px;
+}
+
+.card span {
+    float: left;
+    display: block;
+    width: 67%;
+    margin-top: 10px;
+    margin-left: 13px;
+    color: #A9A9A9;
+}
+
+.btn {
+    border-radius: 50%;
+    width: 30px!important;
+    height: 31px!important;
+    background: #7ca7d5;
+    position: absolute;
+    bottom: 2px;
+    right: 3px;
+    padding: 7px;
+    box-shadow: 3px 2px 4px #c0c0c0;
+    transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88);
+}
+
+.setHeader {
+    padding: 5px;
+    border-top: 2px solid #d3d3d3;
+    border-bottom: 2px solid #d3d3d3;
+    background: #ffffff;
+    width: 100vw;
+    height: 23px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.setItem {
+    height:40px;
+    padding:5px;
+    background:#ffffff;
+    border-bottom:1px solid #f1f1f1;
+    font-size:16px;
+    margin:2px 0px;
+    
+}
+
+.setItem image {
+    width: 30px;
+    height: 30px;
+    line-height: 40px;
+    position: relative;
+    top: 5px;
+}
+
+.setItem view {
+    display: inline-block;
+    line-height: 40px;
+    vertical-align: top;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.setItem span {
+    line-height: 40px;
+    height: 40px;
+    vertical-align: top;
+    float: right;
+    color: #d3d3d3;
+    font-size: 20px;
+}
+
+.qrCodeImg {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    top: 20%;
+}

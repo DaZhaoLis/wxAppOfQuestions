@@ -1,0 +1,48 @@
+<view class="mainBox">
+    <view class="header">
+        <!--头像figure-->
+        <view class="topBg"></view>
+        <view class="figure">
+            <view class="imgContainer">
+                <image class="userLogo" src="{{userInfo.logo}}"></image>
+            </view>
+            <span class="userName">{{userInfo.name}}</span><span class="userRole">{{userInfo.role || '暂无'}}</span>
+            <view class="figureContent">
+                <span>{{userInfo.pStation}}/</span>
+                <span>{{userInfo.office}}/</span>
+
+            </view>
+        </view>
+
+    </view>
+    <view class="body">
+        <!--栏目-->
+        <view class="nav">
+            <view class="card" style="border-bottom:3px solid #f28ba0;transform:scale({{Zero[0]}});opacity:{{Zero[0]}}">
+                <image src="../../images/sign.png"></image>
+                <span style="color: #000000;">备案</span>
+                <span>消防相关规定备案处理</span>
+                <image class="btn" src="../../images/edit.png" style="transform:translateX({{btnZero[0]}})"></image>
+                <!-- <span>></span> -->
+            </view>
+            <view class="card" style="border-bottom: 3px solid #83c1eb;transform:scale({{Zero[1]}});opacity:{{Zero[1]}}">
+                <image src="../../images/exam.png" style="height: 80px;margin-top: 10px;"></image>
+                <span style="color: #000000;">练习题</span>
+                <span>小习题常练习，遇危险不慌张</span>
+                <image class="btn" src="../../images/edit.png" style="transform:translateX({{btnZero[1]}})"></image>
+            </view>
+            <view class="card" style="border-bottom: 3px solid #6acecd;transform:scale({{Zero[2]}});opacity:{{Zero[0]}}">
+                <image src="../../images/exercise.png" style="height: 80px;margin-top: 10px;"></image>
+                <span style="color: #000000;">考试</span>
+                <span>消防每日沙场考试</span>
+                <image class="btn" src="../../images/edit.png" style="transform:translateX({{btnZero[2]}})"></image>
+            </view>
+            <view class="card" style="border-bottom: 3px solid #929dfc;transform:scale({{Zero[3]}});opacity:{{Zero[3]}}">
+                <image src="../../images/arrange.png"></image>
+                <span style="color: #000000;">排名</span>
+                <span>消防大比武排名</span>
+                <image class="btn" src="../../images/edit.png" style="transform:translateX({{btnZero[3]}})"></image>
+            </view>
+        </view>
+    </view>
+</view>

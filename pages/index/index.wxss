@@ -1,0 +1,136 @@
+.userLogo {
+    width: 87px;
+    height: 84px;
+    position: relative;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+}
+
+.leftHolder,
+.righHolder {
+    width: 37px;
+    height: 4px;
+    position: absolute;
+    background: #ffffff;
+    z-index: 999;
+}
+
+.leftHolder {
+    top: -2px;
+    right: -3px;
+}
+
+.righHolder {
+    bottom: -1px;
+    left: 0px;
+    width: 39px;
+    height: 4px;
+}
+
+.imgContainer {
+    display: inline-block;
+    float: left;
+    width: 98px;
+}
+
+.figure {
+    padding: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 11px;
+    position: relative;
+    margin: 10px 14px;
+    box-shadow: 0px 4px 3px rgba(229, 229, 229, .95);
+}
+
+.figureContent {
+    float: left;
+    margin-left: 5px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    width: 55%;
+}
+
+.userName {
+    min-width: 18px;
+    margin-left: 8px;
+    font-size: 22px;
+    width: 60%;
+    display: inline-block;
+}
+
+.figureContent span {
+    display: block;
+    line-height: 30px;
+}
+
+.mainBox {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(252, 250, 250, 0.77);
+}
+
+.userRole {
+    position: absolute;
+    background: #08d9da;
+    font-size: 12px;
+    padding: 2px;
+    color: #ffffff;
+    right: 0px;
+    padding-left: 9px;
+}
+
+.card {
+    padding: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 18px;
+    position: relative;
+    height: 105px;
+    margin: 15px;
+    border-top: 3px solid #f28ba0;
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88);
+    box-shadow: 0px 3px 3px rgba(229, 229, 229, .95);
+}
+
+.card image {
+    width: 87px;
+    height: 101px;
+    float: left;
+    margin-top: 0px;
+}
+
+.card span {
+    float: left;
+    display: block;
+    width: 67%;
+    margin-top: 10px;
+    margin-left: 13px;
+    color: #A9A9A9;
+}
+
+.btn {
+    border-radius: 50%;
+    width: 30px!important;
+    height: 31px!important;
+    background: #7ca7d5;
+    position: absolute;
+    bottom: 2px;
+    right: 3px;
+    padding: 7px;
+    box-shadow: 3px 2px 4px #c0c0c0;
+    transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88);
+}
+
+.topBg {
+    z-index: 0;
+    background: #7ca7d5;
+    width: 100vw;
+    height: 82px;
+    position: absolute;
+    top: 0px;
+}

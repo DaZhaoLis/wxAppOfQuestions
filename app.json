@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/friends/friends",
+        "pages/oaprocess/oaprocess",
+        "pages/setting/setting"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#7ca7d5",
+        "navigationBarTitleText": "龙岗消防问卷",
+        "navigationBarTextStyle": "white",
+        "onReachBottomDistance": 50
+    },
+    "tabBar": {
+        "color": "#000000",
+        "selectedColor": "#7ca7d5",
+        "backgroundColor": "#ffffff",
+        "borderStyle": "#d3d3d3",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/home_d.png",
+                "selectedIconPath": "images/home_a.png"
+            }, {
+                "pagePath": "pages/friends/friends",
+                "text": "单位好友",
+                "iconPath": "images/friends_d.png",
+                "selectedIconPath": "images/friends_a.png"
+            },
+            {
+                "pagePath": "pages/oaprocess/oaprocess",
+                "text": "OA流程",
+                "iconPath": "images/oaprocess_d.png",
+                "selectedIconPath": "images/oaprocess_a.png"
+            },
+            {
+                "pagePath": "pages/setting/setting",
+                "text": "设置",
+                "iconPath": "images/setting_d.png",
+                "selectedIconPath": "images/setting_a.png"
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+<view class="mainBox">
+    <view class="setHeader">功能</view>
+    <view class="setItem">
+        <image src="../../../images/push.png"></image>
+        <view class="">消息推送</view>
+        <span>></span>
+    </view>
+    <view class="setItem">
+        <image src="../../../images/find.png"></image>
+        <view class="">关于我们</view>
+        <span>></span>
+    </view>
+    <image class="qrCodeImg" src="../../../images/qrcode.png"></image>
+</view>

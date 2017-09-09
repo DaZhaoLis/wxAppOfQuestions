@@ -1,0 +1,206 @@
+.userLogo {
+    width: 87px;
+    height: 84px;
+    position: relative;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+}
+
+.leftHolder,
+.righHolder {
+    width: 37px;
+    height: 4px;
+    position: absolute;
+    background: #ffffff;
+    z-index: 999;
+}
+
+.search {
+    border-radius: 10px;
+    width: 70%;
+    height: 30px;
+    margin: 0 auto;
+    position: absolute;
+    top: 72px;
+    padding: 3px;
+    background: rgba(252, 250, 250, 0.77);
+    line-height: 30px;
+    left: 15%;
+}
+
+.leftHolder {
+    top: -2px;
+    right: -3px;
+}
+
+.righHolder {
+    bottom: -1px;
+    left: 0px;
+    width: 39px;
+    height: 4px;
+}
+
+.imgContainer {
+    display: inline-block;
+    float: left;
+    width: 98px;
+}
+
+.figure {
+    padding: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.figureContent {
+    float: left;
+    margin-left: 5px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    width: 55%;
+}
+
+.userName {
+    min-width: 18px;
+    margin-left: 8px;
+    font-size: 18px;
+    vertical-align: middle;
+    font-weight: bold;
+    float: left;
+    color: #73aaef;
+    width: 100%;
+    padding-bottom: 7px;
+}
+
+.figureContent span {
+    display: block;
+    line-height: 30px;
+}
+
+.mainBox {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(252, 250, 250, 0.77);
+}
+
+.userRole {
+    position: absolute;
+    background: #08d9da;
+    font-size: 12px;
+    padding: 2px;
+    color: #ffffff;
+    right: 0px;
+    padding-left: 9px;
+}
+
+.card {
+    padding: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    height: 105px;
+    margin: 8px;
+    border-bottom: 3px solid #f28ba0;
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88);
+}
+
+.card image {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    padding-left: 7px;
+}
+
+.card span {
+    float: left;
+    display: block;
+    width: 67%;
+    margin-top: 10px;
+    margin-left: 13px;
+    color: #A9A9A9;
+}
+
+.btn {
+    border-radius: 50%;
+    width: 30px!important;
+    height: 31px!important;
+    background: #7ca7d5;
+    position: absolute;
+    bottom: 2px;
+    right: 3px;
+    padding: 7px;
+    box-shadow: 3px 2px 4px #c0c0c0;
+    transition: transform 0.3s cubic-bezier(0.2, -0.32, 1, 1.88);
+}
+
+.nav {
+    width: 97%;
+    overflow-x: hidden;
+    margin: 10px;
+    margin-top: 14px;
+}
+
+.userI {
+    width: 86vw;
+    margin: 5px;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 11px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 5px #f1f1f1;
+}
+
+.figurImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 3px solid #73aaef;
+}
+
+.concatTag {
+    line-height: 68px;
+    float: right;
+}
+
+.concatTag image {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    padding-left: 7px;
+}
+
+.rightMenu {
+    width: 10px;
+    float: right;
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+    font-size: 17px;
+}
+
+.rightMenu view {
+    padding-bottom: 4px;
+}
+
+.userConcat {
+    display: inline-block;
+    width: 47vw;
+    vertical-align: middle;
+}
+
+.header {
+    height: 131px;
+    background: url('../../../images/concatBg.png') top center no-repeat;
+    background-size: 100% 103%;
+}

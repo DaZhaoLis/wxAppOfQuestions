@@ -1,0 +1,32 @@
+<view class="mainBox">
+    <view class="header">
+
+        <view class="search">
+            <image src="../../../images/search.png" style="width: 15px;height: 15px;padding-left: 5px;position: absolute;top: 30%;"></image>
+            <input type="text" placeholder="请输入好友名或号码" bindtap="search" style="font-size: 15px;color: #7ca7d5;margin-left: 24px;position: relative;top: 2px;font-weight: bold;" />
+        </view>
+
+    </view>
+    <view class="body">
+        <!--栏目-->
+        <view class="nav">
+            <view class="rightMenu">
+                <view class="menuItem" wx:for="{{menuItems}}" wx:for-item="menuI">{{menuI}}</view>
+            </view>
+            <view wx:for="{{users}}" wx:for-item="item" class="userI">
+                <image src="{{item.figurImg}}" class="figurImg"></image>
+                <view class="userConcat">
+                    <view class="userName">{{item.userName}}</view>
+                    <view class="userName" style="color: #d3d3d3;">{{item.userTel}}</view>
+                </view>
+                <view wx:for="{{item.tags}}" wx:for-item="tag" class="concatTag">
+                    <image src="../../../images/wx.png" style="{{tag.wx !== ''?'display:inline-block;':'display:none;'}}"></image>
+                    <image src="../../../images/mobile.png" style="{{tag.tel !== ''?'display:inline-block;':'display:none;'}}"></image>
+                    <image src="../../../images/message.png" style="{{tag.message !== ''?'display:inline-block;':'display:none;'}}"></image>
+                </view>
+            </view>
+
+        </view>
+
+    </view>
+</view>
